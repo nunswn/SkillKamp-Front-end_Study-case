@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Home from './pages/Home';
+import Shop from './pages/ShopCollection';
+import Story from './pages/OurStory';
+import Contact from './pages/Contact';
+import Navbar from './component/Navbar';
+import Codebar from './component/Codebar'
+import Menu from './component/Menu'
+import Cart from './component/Cart'
+import Footer from './component/Footer'
+import StickySocial from './component/StickySocial';
 
-function App() {
+
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='main'>
+      <Codebar/>
+      <h1>happy kids</h1>
+      <Menu />
+      <Cart/>
+      <StickySocial/>
+          <Router>
+            <Navbar />
+            <Routes>
+              <Route path="/shop" element={<Shop />} />
+              <Route path="/story" element={<Story />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/" element={<Home />} />
+            </Routes>
+          </Router>
+      <hr />
+      <Footer/>
     </div>
   );
 }

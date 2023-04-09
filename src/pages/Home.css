@@ -1,0 +1,142 @@
+* {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#promo {
+    color: white;
+    background-color: rgb(35, 35, 35);
+    text-align: center;
+    font-size: 14px;
+    padding: 0.5em;
+}
+  
+.fade {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+#bg{
+    padding: 1.5em;
+    background-color: black;
+    z-index: -1;
+    margin-top: -15%;
+}
+
+.banner {
+    position: relative;
+  }
+  
+  .banner img {
+    margin-top: 1.5em;
+    width: 100%;
+  }
+  
+  .dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dot {
+    height: 0.5em;
+    width: 0.5em;
+    margin: 0 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #717171;
+  }
+
+  .product-preview {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+
+  .product-preview-heading h2 {
+    text-align: center;
+  }
+  
+  .product-preview-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-preview-buttons .left{
+    position: absolute;
+    left: 0;
+  }
+
+  .product-preview-buttons .right{
+    position: absolute;
+    right: 0;
+  }
+  
+  .product-preview-buttons button {
+    font-size: 30px;
+    width: 50px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    bottom: 20%;
+  }
+  
+  .product-preview-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-preview-item {
+    display: none;
+    flex-direction: column;
+  }
+  
+  .product-preview-item.active {
+    display: flex;
+  }
+  
+  .product-preview-item img {
+    width: 279px;
+    height: 279px;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }  
+
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+    margin: 2em 10px 0 10px;
+    font-size: 12px;
+}
+
+
+.banner {
+    display: flex;
+    margin-top: 2.5em;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{ 
+    margin-top: 10%;
+    text-align: center;
+}
