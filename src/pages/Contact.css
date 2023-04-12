@@ -1,0 +1,17 @@
+h2 {
+    margin-top: 3rem;
+}
+
+h2, p {
+    text-align: center;
+}
+
+p{
+    font-weight: lighter;
+}
+
+.head {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}

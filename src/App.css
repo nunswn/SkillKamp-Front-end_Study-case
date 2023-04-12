@@ -14,11 +14,38 @@
 h1 {
   margin-top: 5%;
   text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  font-weight: 200;
+  font-size: 400%;
 }
+
+h2 {
+  font-family: 'Patrick Hand', cursive;
+  font-weight: 100;
+  font-size: 250%;
+}
+
+h3 {
+  font-family: 'Patrick Hand', cursive;
+}
+
+p, button, input, select {
+  font-family: Poiret One, cursive;
+  font-weight: bold;
+}
+
+select {
+  font-size: 100%;
+  margin: 5px;
+}
+
 
 .navbar ul li a{
   text-decoration: none;
   color: black;
+  font-family: Poiret One, cursive;
+  font-weight: bold;
+  font-size: 14px
 }
 
 .navbar ul li a:hover{
@@ -32,14 +59,14 @@ h1 {
 .login {
   position: absolute;
   left: 6em;
-  top: 11em;
+  top: 15em;
   margin: 1em 0;
 }
 
 .cart{
   position: absolute;
-  right: 5em;
-  top: 9em;
+  right: 3em;
+  top: 9.7em;
 }
 
 .sticky-social {

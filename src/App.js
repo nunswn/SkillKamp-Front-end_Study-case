@@ -12,17 +12,17 @@ import Cart from './component/Cart'
 import Footer from './component/Footer'
 import StickySocial from './component/StickySocial';
 
-
 function App () {
   return (
     <div className='main'>
       <Codebar/>
       <h1>happy kids</h1>
-      <Menu />
-      <Cart/>
       <StickySocial/>
           <Router>
             <Navbar />
+
+            <Menu />
+            <Cart/>
             <Routes>
               <Route path="/shop" element={<Shop />} />
               <Route path="/story" element={<Story />} />
